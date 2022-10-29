@@ -1,0 +1,264 @@
+/* ------------------------------------- Start General Styling ------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI Light', Tahoma, sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+}
+
+.loading-screen {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #000;
+  display: flex;
+}
+
+/* ------------------------------------- End General Styling --------------------------------------- */
+/* ------------------------------------- Start Header Section Styling ------------------------------ */
+
+.navbar {
+  z-index: 1;
+  left: -250px;
+  width: 310px;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+
+.navbar-nav {
+  height: 300px;
+  overflow: hidden;
+}
+
+.navbar.show-nav {
+  left: 0;
+}
+
+.nav-item {
+  padding-top: 350px;
+  opacity: 0;
+  transition: all 1.3s ease;
+  -webkit-transition: all 1.3s ease;
+  -moz-transition: all 1.3s ease;
+  -ms-transition: all 1.3s ease;
+  -o-transition: all 1.3s ease;
+}
+
+.navbar.show-nav .nav-item {
+  padding-top: 0;
+  opacity: 1;
+}
+
+.outer-navbar {
+  background-color: #f8f6f6;
+  width: 60px;
+  position: relative;
+  left: 0;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+  color: #212529;
+  font-size: 25px;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.outer-navbar-icons a {
+  color: #212529;
+}
+
+.navbar-brand {
+  width: 80%;
+}
+
+.navbar-collapse {
+  width: 250px;
+  flex-basis: auto;
+  background-color: #000;
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+  font-weight: 500;
+  line-height: 24px;
+  color: #f9f6f6;
+}
+
+.navbar-desc-icons a {
+  color: #212529;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.navbar-desc p {
+  color: #999;
+  line-height: 24px;
+}
+
+/* ------------------------------------- End Header Section Styling -------------------------------- */
+/* ------------------------------------- Start Search Section Styling ------------------------------ */
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, .7);
+  border-radius: 0;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 .5rem 1rem rgba(255, 255, 255, .1) !important;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, .7);
+  color: #fff;
+}
+
+/* ------------------------------------- End Search Section Styling -------------------------------- */
+/* ------------------------------------- Start Content Section Styling ----------------------------- */
+
+.content-box,
+.content-box-img,
+.content-box-img img,
+.content-box-text {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.content-box {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.content-box-text {
+  background-color: rgba(255, 255, 255, .7);
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  padding: 10px;
+}
+
+.content-box-text h3 {
+  font-size: 32px;
+  color: #000;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.content-box-text p {
+  font-weight: 800;
+  color: #000;
+}
+
+.content-box:hover .content-box-text {
+  top: 0;
+}
+
+/* ------------------------------------- End Content Section Styling ------------------------------- */
+/* ------------------------------------- Start Category Section Styling ---------------------------- */
+
+#category .content-box-text-desc {
+  height: inherit;
+  overflow: hidden;
+}
+
+/* ------------------------------------- End Category Section Styling ------------------------------ */
+/* ------------------------------------- Start Area Section Styling -------------------------------- */
+
+.area-box,
+.category-box,
+.ingredients-box {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  cursor: pointer;
+}
+
+.area-box h2,
+.ingredients-box h2,
+#contact h2,
+.content-box-desc-text h3 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.area-box i {
+  color: #e65a50ab;
+}
+
+/* ------------------------------------- End Area Section Styling ---------------------------------- */
+/* ------------------------------------- Start Ingredients Section Styling ------------------------- */
+
+.ingredients-box i {
+  color: #9ee650ab;
+}
+
+.ingredients-box p {
+  height: 120px;
+  overflow: hidden;
+}
+
+.ingredients-box p,
+.content-box-desc-text p {
+  color: #fff;
+}
+
+/* ------------------------------------- End Ingredients Section Styling --------------------------- */
+/* ------------------------------------- Start Content Desc Section Styling ------------------------ */
+
+.content-box-desc-text h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.content-box-desc-text h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.content-box-desc-text p span {
+  font-weight: 700;
+}
+
+.content-box-desc-text h4 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 34px;
+}
+
+.youtube {
+  background-color: #f70000;
+}
+
+/* ------------------------------------- End Content Desc Section Styling -------------------------- */
